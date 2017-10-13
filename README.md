@@ -1,4 +1,4 @@
-####UTILITY JS for nested JSON
+#### UTILITY JS for nested JSON
 
 ######  Javascript  Class returning three public accessible function  as
 1. iskeyExist
@@ -7,14 +7,14 @@
 
 
 ###### iskeyExist
-  <pre>
-	 UTILITY.iskeyExsit(obj,'keyname');
+<pre>
+	UTILITY.iskeyExsit(obj,'keyname');
 </pre>
 
-  @obj : Nested Object
-   @keyname : In case of first level Search  only single key in str keyName
-   In case of second Level SEARCH {{keyNameofFirstLevel.keyNameofSecondLevel}}
-and so on {{keyNameofFirstLevel.keyNameofSecondLevel.nthlevelkey}}
+  @obj : Nested Object.
+
+  @keyname : In case of first level Search only single key as keyName
+			In case of second Level SEARCH {{keyNameofFirstLevel.keyNameofSecondLevel}}so on {{keyNameofFirstLevel.keyNameofSecondLevel.nthlevelkey}}
 
 **return : Boolean value**
 
@@ -24,9 +24,11 @@ and so on {{keyNameofFirstLevel.keyNameofSecondLevel.nthlevelkey}}
 	 UTILITY.getkeyValue(obj,'keyname');
 </pre>
 
- @obj : javascript object
- @keyname : In case of first level Search  only single key in str  keyName
-    In case of second Level SEARCH  {{keyNameofFirstLevel.keyNameofSecondLevel}}and so on {{keyNameofFirstLevel.keyNameofSecondLevel.nthlevelkey}}
+ @obj : javascript object.
+
+ @keyname : In case of first level Search  only single key as keyName.
+
+In case of second Level SEARCH  {{keyNameofFirstLevel.keyNameofSecondLevel}}and so on {{keyNameofFirstLevel.keyNameofSecondLevel.nthlevelkey}}
 
 **return : value of key (string , number,array ,object ,null) **
 
@@ -36,14 +38,14 @@ and so on {{keyNameofFirstLevel.keyNameofSecondLevel.nthlevelkey}}
 </pre>
 
   @arrOfObj : Nested Object
-  @keyname :
-  							In case of first level Search  only single key in str 'keyName'
-   						   In case of second Level SEARCH '{{keyNameofFirstLevel.keyNameofSecondLevel}}'
+
+  @keyname :In case of first level Search  only single key in str 'keyName'
+   			In case of second Level SEARCH '{{keyNameofFirstLevel.keyNameofSecondLevel}}'
   and so on {{keyNameofFirstLevel.keyNameofSecondLevel.nthlevelkey}}
 
    @isNumericSort: In case of numeric sort ,isNumericSort should be **true**
-								  In case of String sort ,isNumericSort should be **false**;
+				    In case of String sort ,isNumericSort should be **false**;
 
-  @reverse : in case DSEC reverse should be **true** and else **false**
+  @reverse : In case DSEC reverse should be **true** and else **false**
 
 **return : sorted array of object**
